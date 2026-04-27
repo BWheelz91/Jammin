@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seven Peaks Fence And Barn | Build Your Fence</title>
+  <meta name="description" content="Enterprise sales and lead generation platform for horse and livestock fencing, barns, gates, arenas, and ranch systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="#">
+        <span class="brand-mark">VII</span>
+        <span>Seven Peaks Fence And Barn</span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#products">Products</a>
+        <a href="#builder">Fence Builder</a>
+        <a href="#financing">Financing</a>
+        <a href="#dealer">Dealer</a>
+        <a href="#installer">Installer</a>
+      </nav>
+      <a class="btn btn-sm" href="#lead-form">Get My Free Estimate</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">Mesa, Arizona • Godley, Texas</p>
+      <h1>The #1 Ranch-Ready Fencing Platform in America</h1>
+      <p class="sub">Rustic luxury meets modern conversion-focused UX for horse and livestock fencing, continuous fence, stalls, arenas, gates, and barn systems.</p>
+      <div class="cta-row">
+        <a href="#builder" class="btn">Build Your Fence</a>
+        <a href="#lead-form" class="btn btn-outline">Get A Free Quote</a>
+        <a href="#financing" class="btn btn-dark">Apply For Financing</a>
+      </div>
+      <div class="trust-inline">
+        <span>5-Star Customer Reviews</span>
+        <span>Fast Delivery Across AZ & TX</span>
+        <span>Certified Install Network</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="financing" class="financing-callout section section-light">
+    <div class="container grid-2">
+      <div>
+        <h2>Flexible Financing. Fast Approval.</h2>
+        <p>Enhancify / Wells Fargo style financing flow with instant prequalification, monthly payment calculator, and one-click "Apply For Financing" CTAs across every high-intent page.</p>
+        <ul class="checklist">
+          <li>Soft pull prequalification flow</li>
+          <li>Auto-sync to CRM pipeline & reminders</li>
+          <li>Financing banners on product + quote pages</li>
+        </ul>
+        <a href="#lead-form" class="btn">Apply For Financing</a>
+      </div>
+      <div class="payment-card">
+        <h3>Monthly Payment Estimator</h3>
+        <label>Project Amount
+          <input id="loanAmount" type="number" value="8500" min="1000" step="100">
+        </label>
+        <label>APR %
+          <input id="loanApr" type="number" value="8.99" min="0" step="0.1">
+        </label>
+        <label>Months
+          <input id="loanMonths" type="number" value="60" min="12" max="120" step="12">
+        </label>
+        <p id="loanEstimate" class="estimate-value">Estimated Payment: $0/mo</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="section">
+    <div class="container">
+      <h2>Shop by Product Category</h2>
+      <div class="cards-4">
+        <article class="card"><h3>Horse Panels</h3><p>Safe, premium panel systems for horse properties.</p></article>
+        <article class="card"><h3>Continuous Fence</h3><p>Long-run perimeter systems with modern ranch appeal.</p></article>
+        <article class="card"><h3>Cattle Systems</h3><p>High-throughput cattle handling and sorting solutions.</p></article>
+        <article class="card"><h3>Round Pens</h3><p>Durable training and exercise pen configurations.</p></article>
+        <article class="card"><h3>Stall Kits</h3><p>Modular horse stall kits for barns and boarding facilities.</p></article>
+        <article class="card"><h3>Gates</h3><p>Decorative and utility gates with custom hardware options.</p></article>
+        <article class="card"><h3>Feeders</h3><p>Ranch-tough feeders engineered for longevity.</p></article>
+        <article class="card"><h3>Stock Tanks</h3><p>Reliable water systems for livestock operations.</p></article>
+      </div>
+      <a href="products.html" class="text-link">View Full Product Pages →</a>
+    </div>
+  </section>
+
+  <section id="builder" class="section section-dark">
+    <div class="container">
+      <h2>Interactive Fence Builder</h2>
+      <p class="sub">Step-by-step wizard to generate rough estimate, capture leads, prequalify financing, and book appointments.</p>
+      <form id="builderForm" class="builder-grid">
+        <label>Animal Type
+          <select name="animal"><option>Horse</option><option>Cattle</option><option>Goat/Sheep</option><option>Mixed Livestock</option></select>
+        </label>
+        <label>Fence Style
+          <select name="style"><option>Continuous Fence</option><option>No-Climb + Pipe Top Rail</option><option>Panel Fence</option><option>Split Rail + Wire</option></select>
+        </label>
+        <label>Property Type
+          <select name="property"><option>Residential Ranch</option><option>Boarding Facility</option><option>Commercial Ag</option><option>Equestrian Arena</option></select>
+        </label>
+        <label>Linear Feet
+          <input name="linearFeet" type="number" min="50" value="600" required>
+        </label>
+        <label>Number of Gates
+          <input name="gates" type="number" min="0" value="2">
+        </label>
+        <label>Add-ons
+          <select name="addons"><option>None</option><option>Stalls</option><option>Round Pen</option><option>Arena</option><option>Stalls + Arena</option></select>
+        </label>
+        <label>Delivery ZIP
+          <input name="zip" type="text" maxlength="10" placeholder="85201" required>
+        </label>
+        <label>Financing Interest
+          <select name="financing"><option>Yes, prequalify me</option><option>Not now</option></select>
+        </label>
+        <button class="btn" type="submit">Get Instant Rough Estimate</button>
+      </form>
+      <div id="builderResult" class="result-box">Complete the builder to see your rough estimate and next steps.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Before / After Ranch Installs</h2>
+        <p>High-impact project visuals built to convert fence shoppers into quote requests.</p>
+        <div class="media-placeholder">Before / After Gallery</div>
+      </div>
+      <div>
+        <h2>Video Showcase</h2>
+        <p>Embed YouTube walkthroughs, install clips, and financing explainers.</p>
+        <div class="media-placeholder">Embedded YouTube Showcase</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <h2>What Ranch Owners Say</h2>
+      <div class="cards-3">
+        <article class="quote">“They made the process easy and the final install looks incredible.”</article>
+        <article class="quote">“Fast quote, clear financing options, and real ranch quality.”</article>
+        <article class="quote">“Our horse setup is safer and looks premium now.”</article>
+      </div>
+    </div>
+  </section>
+
+  <section id="dealer" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Dealer Portal</h2>
+        <p>Dealer applications, dashboard analytics, lead routing, marketing assets, and training docs in one login.</p>
+        <a href="dealer-portal.html" class="btn">Become A Dealer</a>
+      </div>
+      <div>
+        <h2>Installer Certification Portal</h2>
+        <p>Apply, onboard, watch training videos, earn certification badges, and receive local lead routing.</p>
+        <a href="installer-portal.html" class="btn btn-outline">Become An Installer</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <h2>AI Sales Agent</h2>
+      <p>Conversational assistant trained on product data, FAQ, financing, delivery, install guides, and YouTube transcripts.</p>
+      <ul class="checklist">
+        <li>Answers questions 24/7</li>
+        <li>Estimates products needed</li>
+        <li>Collects lead details + consult scheduling</li>
+        <li>Triggers SMS/email follow-up in GoHighLevel</li>
+      </ul>
+      <div class="ai-widget">
+        <p><strong>AI Agent:</strong> “How many linear feet are you fencing and what animals are you containing?”</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>FAQs</h2>
+      <details><summary>Do you deliver outside Arizona and Texas?</summary><p>Yes. Delivery rules are ZIP-based, with freight options quoted during checkout and estimate flow.</p></details>
+      <details><summary>Can I finance custom fence builds?</summary><p>Yes. Financing options are available for approved applicants and shown on product, quote, and checkout pages.</p></details>
+      <details><summary>Do you offer install support?</summary><p>Yes. DIY guides, remote support, and certified installer referrals are available.</p></details>
+    </div>
+  </section>
+
+  <section id="lead-form" class="section section-light">
+    <div class="container grid-2">
+      <div>
+        <h2>Get My Free Estimate</h2>
+        <p>Conversion-optimized lead form synced to GoHighLevel pipelines, calendar booking, and automated SMS/email follow-up.</p>
+      </div>
+      <form class="lead-form">
+        <input placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone" required>
+        <input placeholder="Project ZIP" required>
+        <select><option>Build Your Fence</option><option>Apply For Financing</option><option>Become A Dealer</option><option>Become An Installer</option></select>
+        <button class="btn" type="submit">Submit Lead</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid-2">
+      <article>
+        <h2>Location: Mesa, Arizona</h2>
+        <p>Service hub for Arizona ranch and equestrian customers.</p>
+        <a class="text-link" href="locations/mesa-az.html">Visit Mesa Page →</a>
+      </article>
+      <article>
+        <h2>Location: Godley, Texas</h2>
+        <p>Service hub for Texas ranch and livestock operations.</p>
+        <a class="text-link" href="locations/godley-tx.html">Visit Godley Page →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="container">
+      <h2>Tracking & Analytics Stack</h2>
+      <p>Configured for Meta Pixel + CAPI, GA4, GTM, Hotjar, and call tracking for full-funnel attribution.</p>
+      <code>window.analyticsStack = ['GTM','GA4','Meta Pixel','CAPI','Hotjar','CallTracking'];</code>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <p>© 2026 Seven Peaks Fence And Barn</p>
+      <a href="content-hub.html">Organic Content Hub</a>
+      <a href="products.html">Product Pages</a>
+      <a href="#">Privacy</a>
+    </div>
+  </footer>
+
+  <a href="#lead-form" class="mobile-sticky-cta">Get My Free Estimate</a>
+</body>
+</html>
